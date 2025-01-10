@@ -1,0 +1,126 @@
+{% macro render_table(players) %}
+<table border="1">
+    <thead>
+        <tr>
+            <th rowspan="2">Rider</th>
+            <th rowspan="2">NAME</th>
+            <th colspan="11">Lap 1</th>
+            <th colspan="11">Lap 2</th>
+            <th colspan="11">Lap 3</th>
+            <th colspan="11">Lap 4</th>
+            <th rowspan="2">Time</th>
+            <th rowspan="2">Final Total</th>
+            <th rowspan="2">0's</th>
+            <th rowspan="2">1's</th>
+            <th rowspan="2">2's</th>
+            <th rowspan="2">3's</th>
+            <th rowspan="2">5's</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+            <th>8</th>
+            <th>9</th>
+            <th>10</th>
+            <th>Total</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+            <th>8</th>
+            <th>9</th>
+            <th>10</th>
+            <th>Total</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+            <th>8</th>
+            <th>9</th>
+            <th>10</th>
+            <th>Total</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+            <th>8</th>
+            <th>9</th>
+            <th>10</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for player in players %}
+        <tr>
+            <td>{{ player['ID'] }}</td>
+            <td>{{ player['Name'] }}</td>
+            <td>{{ player['1'] }}</td>
+            <td>{{ player['2'] }}</td>
+            <td>{{ player['3'] }}</td>
+            <td>{{ player['4'] }}</td>
+            <td>{{ player['5'] }}</td>
+            <td>{{ player['6'] }}</td>
+            <td>{{ player['7'] }}</td>
+            <td>{{ player['8'] }}</td>
+            <td>{{ player['9'] }}</td>
+            <td>{{ player['10'] }}</td>
+            <td>{{ player['Total lap 1'] }}</td>
+            <td>{{ player['11'] }}</td>
+            <td>{{ player['12'] }}</td>
+            <td>{{ player['13'] }}</td>
+            <td>{{ player['14'] }}</td>
+            <td>{{ player['15'] }}</td>
+            <td>{{ player['16'] }}</td>
+            <td>{{ player['17'] }}</td>
+            <td>{{ player['18'] }}</td>
+            <td>{{ player['19'] }}</td>
+            <td>{{ player['20'] }}</td>
+            <td>{{ player['Total lap 2'] }}</td>
+            <td>{{ player['21'] }}</td>
+            <td>{{ player['22'] }}</td>
+            <td>{{ player['23'] }}</td>
+            <td>{{ player['24'] }}</td>
+            <td>{{ player['25'] }}</td>
+            <td>{{ player['26'] }}</td>
+            <td>{{ player['27'] }}</td>
+            <td>{{ player['28'] }}</td>
+            <td>{{ player['29'] }}</td>
+            <td>{{ player['30'] }}</td>
+            <td>{{ player['Total lap 3'] }}</td>
+            <td>{{ player['31'] }}</td>
+            <td>{{ player['32'] }}</td>
+            <td>{{ player['33'] }}</td>
+            <td>{{ player['34'] }}</td>
+            <td>{{ player['35'] }}</td>
+            <td>{{ player['36'] }}</td>
+            <td>{{ player['37'] }}</td>
+            <td>{{ player['38'] }}</td>
+            <td>{{ player['39'] }}</td>
+            <td>{{ player['40'] }}</td>
+            <td>{{ player['Total lap 4'] }}</td>
+            <td>{{ player['Time'] }}</td>
+            <td>{{ player['Final Score'] }}</td>
+            <td>{{ player["0's"] }}</td>
+            <td>{{ player["1's"] }}</td>
+            <td>{{ player["2's"] }}</td>
+            <td>{{ player["3's"] }}</td>
+            <td>{{ player["5's"] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endmacro %}
